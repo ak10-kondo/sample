@@ -1,0 +1,55 @@
+paxton-bootstrap:
+  version: 1.x
+  css:
+    theme:
+      includes/bootstrap/css/bootstrap.min.css: {}
+  js:
+    includes/bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+global-css:
+  Version: 1.x
+  css:
+    theme:
+      css/page.css: {}
+      css/style.min.css: {}
+      css/parallax-slider.css: {}
+      css/parallax-slider-custom-overrides.css: {}
+      css/paxton-custom-overrides.css: {}
+
+global-js:
+  js:
+    js/jquery.isotope.min.js: {}
+    js/jquery.imagesloaded.js: {}
+    #js/flexslider.js: {}
+    js/jquery.cslider.js: {}
+    js/slider.js: {}
+    js/jquery.fancybox.js: {}
+    js/jquery.gmap.min.js: {}
+    #http://maps.google.com/maps/api/js?sensor=true: {}
+    js/location.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+paxton-slider:
+  js:
+    js/flexslider.js: {}
+    js/slider.js: {}
+  dependencies:
+    - paxton/jquery.isotope
+
+paxton-custom:
+  js:
+    js/custom.js: {}
+  dependencies:
+    - paxton/flexslider
